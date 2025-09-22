@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thea Bakker – Project Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f9fafc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(120deg, #6a11cb, #a4508b); /* Purple gradient */
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      border-bottom-left-radius: 30% 10%;
+      border-bottom-right-radius: 30% 10%;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    header p {
+      font-size: 1.1rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section.project {
+      background: white;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+
+    section.project:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-family: 'Georgia', serif;
+      font-size: 1.8rem;
+      color: #2a4d7d; /* Navy color */
+    }
+
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .images img {
+      max-height: 250px;
+      width: auto;
+      border-radius: 10px;
+      object-fit: contain; /* Prevents smushing */
+      background: #f0f0f0;
+      flex: 1 1 auto;
+    }
+
+    p.description {
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #2a4d7d;
+      color: white;
+      margin-top: 3rem;
+    }
+
+    footer p {
+      margin: 0.2rem 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Thea Bakker</h1>
+    <p>Project Portfolio – Mechatronics Engineering</p>
+  </header>
+
+  <main>
+    <!-- Foam Roller Mechanism -->
+    <section class="project">
+      <h2>Foam Roller Mechanism – Magna International</h2>
+      <div class="images">
+        <img src="foam1.jpg" alt="Foam Roller Mechanism">
+        <img src="foam2.jpg" alt="Foam Roller Mechanism">
+      </div>
+      <p class="description">Designed, 3D printed, and assembled a custom foam roller mechanism for an injection molding robot upgrade at Magna. Enhanced process reliability and improved material handling efficiency.</p>
+    </section>
+
+    <!-- Brake Pedal System -->
+    <section class="project">
+      <h2>Brake Pedal System – Midnight Sun Solar Car Team</h2>
+      <div class="images">
+        <img src="brake1.jpg" alt="Brake Pedal System">
+        <img src="brake2.jpg" alt="Brake Pedal System">
+      </div>
+      <p class="description">Designed a Hall-effect sensor brake pedal system in SolidWorks, resolving ergonomic and structural issues from prior iterations. Validated design using FEA and integrated into MS16 solar car.</p>
+    </section>
+
+    <!-- Pudding Preparation Robot -->
+    <section class="project">
+      <h2>Pudding Preparation Robot</h2>
+      <div class="images">
+        <img src="pudding1.jpg" alt="Pudding Robot">
+        <img src="pudding2.jpg" alt="Pudding Robot">
+      </div>
+      <p class="description">Developed a fully functional automated system for preparing puddings, integrating mechanical design, 3D printing, and embedded controls with 8 DC motors and sensors.</p>
+    </section>
+
+    <!-- Obstacle Course Robot -->
+    <section class="project">
+      <h2>Obstacle Course Robot – CREATE Design Challenge</h2>
+      <div class="images">
+        <img src="obstacle1.jpg" alt="Obstacle Robot">
+        <img src="obstacle2.jpg" alt="Obstacle Robot">
+      </div>
+      <p class="description">Built an autonomous rover under tight constraints, capable of avoiding obstacles and navigating rough terrain. Outperformed over 40 competing teams at UofT's CREATE Engineering Design Challenge.</p>
+    </section>
+
+    <!-- Modular Synthesizer -->
+    <section class="project">
+      <h2>Modular Synthesizer</h2>
+      <div class="images">
+        <img src="synth1.jpg" alt="Synthesizer">
+        <img src="synth2.jpg" alt="Synthesizer">
+      </div>
+      <p class="description">Built a synthesizer with 3 potentiometers to control waveform output. Integrated sequencer code, oscillators, and Arduino-based sound customization.</p>
+    </section>
+
+    <!-- Maze Navigating Robot -->
+    <section class="project">
+      <h2>Maze Navigating Robot</h2>
+      <div class="images">
+        <img src="maze1.jpg" alt="Maze Robot">
+        <img src="maze2.jpg" alt="Maze Robot">
+      </div>
+      <p class="description">Created a robot with custom bumper sensors and navigation algorithms in C, achieving high success navigating dynamically changing mazes.</p>
+    </section>
+
+    <!-- Simulated Traffic Light System -->
+    <section class="project">
+      <h2>Simulated Traffic Light System</h2>
+      <div class="images">
+        <img src="traffic1.jpg" alt="Traffic Light System">
+        <img src="traffic2.jpg" alt="Traffic Light System">
+      </div>
+      <p class="description">Programmed, wired, and assembled a traffic light control system prototype, integrating sensors and LEDs to simulate realistic behavior.</p>
+    </section>
+
+    <!-- Custom Laser Mounts -->
+    <section class="project">
+      <h2>Custom Laser Mounts – Magna International</h2>
+      <div class="images">
+        <img src="laser1.jpg" alt="Laser Mounts">
+        <img src="laser2.jpg" alt="Laser Mounts">
+      </div>
+      <p class="description">Designed, machined, and assembled custom laser mounts for a production line, ensuring accurate positioning and improved inspection reliability.</p>
+    </section>
+
+    <!-- Custom Belt Grinder/Sander -->
+    <section class="project">
+      <h2>Custom Belt Grinder</h2>
+      <div class="images">
+        <img src="grinder1.jpg" alt="Belt Grinder">
+        <img src="grinder2.jpg" alt="Belt Grinder">
+      </div>
+      <p class="description">Machined, wired, and assembled a functional belt grinder for workshop use, emphasizing durability and safety.</p>
+    </section>
+
+    <!-- Keychain CAD Assembly -->
+    <section class="project">
+      <h2>Keychain CAD Assembly</h2>
+      <div class="images">
+        <img src="keychain1.jpg" alt="Keychain CAD">
+        <img src="keychain2.jpg" alt="Keychain CAD">
+      </div>
+      <p class="description">Created a detailed SolidWorks keychain assembly, demonstrating design intent, dimensioning, and rendering skills.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Thea Bakker</p>
+    <p>University of Waterloo – Mechatronics Engineering</p>
+  </footer>
+</body>
+</html>
