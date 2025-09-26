@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thea Bakker – Project Portfolio</title>
   <style>
+    
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
@@ -14,14 +15,31 @@
     }
 
     header {
-      background: linear-gradient(120deg, #6a11cb, #a4508b); /* Purple gradient */
+      background: linear-gradient(135deg, #6a11cb, #a4508b); /* Purple gradient */
       color: white;
       padding: 3rem 1rem;
       text-align: center;
       border-bottom-left-radius: 30% 10%;
       border-bottom-right-radius: 30% 10%;
+      position: relative;
+      overflow: hidden;
     }
 
+/* Banner overlay */
+    header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+    linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    }
+    
     header h1 {
       margin: 0;
       font-size: 2.5rem;
@@ -30,6 +48,26 @@
 
     header p {
       font-size: 1.1rem;
+    }
+
+    /* Linkedin button*/
+    header a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: white;
+      color: #6a11cb;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+
+    header a:hover {
+      background: #f4f4f9;
+      color: #a4508b;
+      transform: scale(1.05);
     }
 
     main {
@@ -53,9 +91,14 @@
 
     h2 {
       margin-top: 0;
-      font-family: 'Georgia', serif;
+      font-family: sans-serif; /* Project title font */
       font-size: 1.8rem;
-      color: #2a4d7d; /* Navy color */
+      color: #6a11cb; /* purple for project titles */
+      transition: color 0.3s ease;
+    }
+
+    h2:hover {
+      color: #a4508b; /* lighter purple hover */
     }
 
     .images {
@@ -196,6 +239,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
