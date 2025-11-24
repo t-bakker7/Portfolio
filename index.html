@@ -133,6 +133,41 @@
       margin: 0.2rem 0;
       font-size: 0.9rem;
     }
+
+    /* PDF Carousel */
+.pdf-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.pdf-frame {
+  width: 80%;
+  height: 500px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.arrow {
+  background: #6a11cb;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.arrow:hover {
+  background: #a4508b;
+}
+    
   </style>
 </head>
 <body>
@@ -232,14 +267,40 @@
       </div>
       <p class="description">Created a detailed SolidWorks keychain assembly, demonstrating design intent, dimensioning, and rendering skills.</p>
     </section>
+
+    <!-- Technical Drawings Carousel -->
+<section class="project">
+  <h2>Technical Drawings</h2>
+
+  <div class="pdf-carousel">
+    <button class="arrow left" onclick="changePDF(-1)">&#10094;</button>
+
+    <iframe id="pdfViewer" src="drawing1.pdf" class="pdf-frame"></iframe>
+
+    <button class="arrow right" onclick="changePDF(1)">&#10095;</button>
+  </div>
+</section>
+    
   </main>
 
   <footer>
     <p>© 2025 Thea Bakker</p>
     <p>University of Waterloo – Mechatronics Engineering</p>
   </footer>
+
+  <script>
+  const pdfs = ["drawing1.pdf", "drawing2.pdf", "drawing3.pdf", "drawing4.pdf"];
+  let pdfIndex = 0;
+
+  function changePDF(dir) {
+    pdfIndex = (pdfIndex + dir + pdfs.length) % pdfs.length;
+    document.getElementById("pdfViewer").src = pdfs[pdfIndex];
+  }
+</script>
+  
 </body>
 </html>
+
 
 
 
